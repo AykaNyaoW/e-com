@@ -1,5 +1,6 @@
 import { Button } from '../shadcn/button';
 import { Link } from 'react-router-dom';
+import { Settings, Bell } from 'lucide-react';
 import {
     Select,
     SelectContent,
@@ -11,18 +12,32 @@ import {
 
 function Header() {
     return (
-        <header className="relative w-full bg-secondary-color flex justify-between items-center px-10 py-2">
+        <header className="relative w-full bg-primary-color flex justify-between items-center px-10 py-2">
             <div className='flex items-center gap-6'>
                 <h1 className='text-white font-bold text-2xl uppercase'>bookworm</h1>
             </div>
             <div className='flex gap-2'>
-                <Button asChild className='font-bold bg-transparent text-sm hover:bg-primary-color'>
-                    <Link to='/'>Login</Link>
-                </Button>
 
-                <Button asChild className='font-bold text-sm bg-primary-color hover:bg-transparent'>
-                    <Link to='/signup'>Register</Link>
-                </Button>
+                {/* for settings and notifications buttons */}
+                <div>
+                    <Button className='bg-transparent hover:bg-primary-shade'>
+                        <Bell />
+                    </Button>
+                    <Button className='bg-transparent hover:bg-primary-shade'>
+                        <Settings />
+                    </Button>
+                </div>
+
+                {/* for login and signup buttons */}
+                <div>
+                    <Button asChild className='font-bold bg-transparent text-sm hover:bg-primary-shade'>
+                        <Link to='/'>Login</Link>
+                    </Button>
+
+                    <Button asChild className='font-bold text-sm text-primary-color bg-secondary-color hover:bg-secondary-shade'>
+                        <Link to='/signup'>Register</Link>
+                    </Button>
+                </div>
             </div>
         </header>
     );

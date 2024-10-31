@@ -7,13 +7,14 @@ import {
   } from "@/frontend/shadcn/select"
 import { Search } from 'lucide-react';
 import { Button } from '../shadcn/button';
+import { ShoppingCart } from 'lucide-react';
 
 function Navbar() {
     return(
-        <nav className="w-full flex px-10 py-2 justify-center">
-            <div className="flex gap-2 items-center w-[500px]">
+        <nav className="absolute w-full flex px-10 py-2 justify-center">
+            <div className="flex gap-2 items-center w-[550px]">
                 <Select>
-                    <SelectTrigger className="w-[150px] font-bold border-black border-2 text-black">
+                    <SelectTrigger className="w-[200px] font-bold border-black border-2 text-black">
                         <SelectValue placeholder="Categories" />
                     </SelectTrigger>
                     <SelectContent>
@@ -29,6 +30,11 @@ function Navbar() {
                     <div className="absolute inset-y-2 flex right-3 item-center">
                         <Search />
                     </div>
+                </div>
+                <div>
+                    <Button>
+                        <ShoppingCart/>
+                    </Button>
                 </div>
             </div>
         </nav>

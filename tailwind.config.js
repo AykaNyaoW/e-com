@@ -8,9 +8,10 @@ export default {
   theme: {
   	extend: {
   		colors: {
-			'primary-color': '#5a759b',
-			'secondary-color': '#001220', // black
-			'tertiary-color': '#F5EDED',
+			'primary-color': '#131416', // black
+			'secondary-color': '#FFFFFF', // white
+			'primary-shade': '#36383a',
+			'secondary-shade': '#d2d2d3',
   			primary: {
   				DEFAULT: 'hsl(var(--primary))',
   				foreground: 'hsl(var(--primary-foreground))'

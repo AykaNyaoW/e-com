@@ -8,7 +8,6 @@ function App() {
   return (
     <BrowserRouter>
       <Header />
-      <Navbar/>
       <Main />
     </BrowserRouter>
   )

@@ -43,7 +43,7 @@ function Login() {
                 </div>
                 <div className="text-center text-sm">
                     <p>Already have an account?
-                    <Link to='/' className="underline text-blue-500"> Login</Link>
+                    <Link to='/login' className="underline text-blue-500"> Login</Link>
                     </p>
                 </div>
 
