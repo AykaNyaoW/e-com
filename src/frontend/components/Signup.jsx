@@ -6,9 +6,9 @@ function Login() {
 
         <form action="" 
         className="w-full flex justify-center items-center">
-            <div className="w-1/4 bg-white p-4 rounded-lg mt-32 border-2 shadow-md">
+            <div className="w-[350px] bg-white p-4 rounded-lg mt-32 border-2 shadow-md">
                 <div className="text-center font-bold text-3xl mb-6">
-                    <h1>Sign Up</h1>
+                    <h1>Register</h1>
                 </div>
 
                 <div className="my-2">

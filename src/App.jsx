@@ -1,14 +1,16 @@
-import { useState } from 'react'
 import Main from './frontend/pages/Main'
 import Header from './frontend/components/Header'
+import { BrowserRouter} from "react-router-dom"
+import Navbar from './frontend/components/Navbar'
 
 function App() {
 
   return (
-    <>
-    <Main></Main>
-    <Header></Header>
-    </>
+    <BrowserRouter>
+      <Header />
+      <Navbar/>
+      <Main />
+    </BrowserRouter>
   )
 }
 

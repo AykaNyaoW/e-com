@@ -8,6 +8,9 @@ export default {
   theme: {
   	extend: {
   		colors: {
+			'primary-color': '#5a759b',
+			'secondary-color': '#001220', // black
+			'tertiary-color': '#F5EDED',
   			primary: {
   				DEFAULT: 'hsl(var(--primary))',
   				foreground: 'hsl(var(--primary-foreground))'
@@ -53,7 +56,10 @@ export default {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
-  		}
+  		},
+		fontFamily: {
+			customFont: ['Poppins', 'sans-serif'],
+		}
   	}
   },
   plugins: [require("tailwindcss-animate")],

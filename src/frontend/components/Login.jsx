@@ -6,7 +6,7 @@ function Login() {
 
         <form action="" 
         className="w-full flex justify-center items-center">
-            <div className="w-1/4 bg-white p-4 rounded-lg mt-32 border-2 shadow-md">
+            <div className="w-[350px] bg-white p-4 rounded-lg mt-32 border-2 shadow-md">
                 <div className="text-center font-bold text-3xl mb-6">
                     <h1>Login</h1>
                 </div>
@@ -31,7 +31,7 @@ function Login() {
                 </div>
                 <div className="text-center text-sm mt-2">
                     <p>Don't have an account?
-                    <Link to='/signup' className="underline text-blue-500"> Sign up</Link>
+                    <Link to='/signup' className="underline text-blue-500"> Register</Link>
                     </p>
                 </div>
             </div>
