@@ -29,7 +29,7 @@ function Home() {
                             <CarouselItem key={index} className="md:basis-auto lg:basis-auto">
                                 <div className="p-1 mx-2"> {/* Reduced padding and added mx-2 for consistent spacing */}
                                     <Card
-                                        content={bookItems}
+                                        image={bookItems}
                                         title="Minimalist Living: Simple Steps to Declutter Your Life"
                                         price="P200"
                                     />

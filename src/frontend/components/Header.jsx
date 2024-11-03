@@ -1,13 +1,6 @@
 import { Button } from '../shadcn/button';
 import { Link } from 'react-router-dom';
 import { Settings, Bell } from 'lucide-react';
-import {
-    Select,
-    SelectContent,
-    SelectItem,
-    SelectTrigger,
-    SelectValue,
-  } from "@/frontend/shadcn/select"
   
 
 function Header() {
@@ -29,9 +22,9 @@ function Header() {
                 </div>
 
                 {/* for login and signup buttons */}
-                <div>
+                <div className='flex gap-1'>
                     <Button asChild className='font-bold bg-transparent text-sm hover:bg-primary-shade'>
-                        <Link to='/'>Login</Link>
+                        <Link to='/login'>Login</Link>
                     </Button>
 
                     <Button asChild className='font-bold text-sm text-primary-color bg-secondary-color hover:bg-secondary-shade'>
